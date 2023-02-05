@@ -13,6 +13,7 @@
 
   <meta name="description" content="A page to find simple and delicious recipes for college students">
   <title>Home- Simple Recipes</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -20,16 +21,23 @@
     <nav>
       <ul>
         <li><a>Home</a></li>
-        <li><a href="about/index.html">About</a></li>
+        <li><a href="about/">About</a></li>
         <li><a href="contact/">Contact</a></li>
       </ul>
     </nav>
   </header>
-
+  <picture>
+    <source media="(min-width: 801px)" srcset="images/hero-2000.jpg">
+    <source media="(min-width: 401px)" srcset="images/hero-800.jpg">
+    <source media="(max-width: 400px)" srcset="images/hero-400.jpg">
+    <img src="images/hero-800" alt="people cooking">
+  </picture>
 
   <h1>Simple and delicious recipes for students!</h1>
   <p>Here you can find recipes that any college student can make! </p>
-
+  <svg>
+    <use href="#smiley" />
+</svg>
   <main>
     <article>
       <h2>Why it is important to learn how to cook</h2>
@@ -69,6 +77,15 @@
   <footer>
     <p> All of the text was generated using <em>ChatGPT</em></p>
   </footer>
+  <svg>
+    <symbol id="smiley" viewBox="0 0 120 120">
+
+      <circle cx="65" cy="82" r="20" stroke="black" fill="transparent" stroke-width="2" />
+      <circle cx="70" cy="75" r="1" stroke="black" fill="transparent" stroke-width="2" />
+      <circle cx="60" cy="75" r="1" stroke="black" fill="transparent" stroke-width="2" />
+      <ellipse cx="65" cy="90" rx="8" ry="3" />
+    </symbol>
+  </svg>
 </body>
 
 </html>
